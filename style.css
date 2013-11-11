@@ -1,0 +1,151 @@
+/*
+Theme Name:     Lalacasa Child
+Theme URI:
+Description:    Child theme for Lalacasa
+Author:         Lalacasa
+Author URI:     http://lalacasa.com
+Template:       lalacasa
+Version:        2.1
+License: GNU General Public License
+License URI: license.txt
+*/
+@import url("../lalacasa/style.css");
+
+/*
+* Please add your custom styles below
+*/
+
+
+#profile #item-buttons .generic-button a{
+	background-color: #49bc86;
+	width: 82px;
+}
+
+body .form-search, body .form-header, body div.alert-box {
+ 	background-color: transparent;
+ 	color: #000;
+ 	border: 0px;
+}
+
+body .form-header .lead, body .form-search label {
+	color: #000;
+	font-weight: bold;
+}
+
+.form-footer, .form-search .notch{display: none;}
+
+.form-header h2, .form-header h3{
+	text-align: right;
+	display: block;
+}
+
+.form-header h2{font-size: 46px; margin-bottom: 0px;}
+.form-header h3{font-size: 30px;}
+
+@media only screen and (max-width: 767px){
+	.form-header h2, .form-header h3{
+		text-align: left;
+		font-size: 28px;
+	}
+}
+
+.form-wrapper .form-search.custom div.custom.dropdown a.current,
+.form-wrapper .form-search.custom div.custom.dropdown a.selector,
+.form-wrapper .form-search.custom input[type="text"] {
+	border: solid 1px #28313d;
+	border-radius: 5px;
+}
+
+.form-wrapper .form-search.custom div.custom.dropdown a.current, .form-wrapper .form-search.custom input[type="text"]{
+	background-color: #28313d;
+}
+
+label.inline,
+.form-search.custom div.custom.dropdown a.current{
+	line-height: 55px;
+}
+
+.form-search.custom div.custom.dropdown, .form-search.custom div.custom.dropdown a.selector, .form-search.custom input[type="text"]{
+	height: 55px;
+}
+
+.form-search .button{
+	height: 50px;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.form-wrapper .form-search .button:hover{
+	background-color: #198b57;
+}
+.login-buttons .button-group i{
+	display:none !important;
+}
+
+@media only screen and (min-width: 768px){
+	.button.tiny{
+		padding: 12px 15px !important;
+	}
+
+	ul.button-group{
+		margin-top: 30px; 
+	}
+
+	#header #logo{
+		margin-top: 10px;
+	}
+
+}
+
+.contain-to-grid:not(.fixed) .top-bar{
+	margin-top: 30px;
+}
+
+@media only screen and (max-width: 767px){
+	.login-buttons{
+		margin-top: 20px;
+	}
+}
+
+#header{
+	padding: 0px;
+}
+
+h1#logo{ margin-bottom: 35px; }
+
+.pmpro-levels .membership .four.columns:last-child{
+	float: left;
+}
+
+img.pro-badge{
+	position: absolute;
+	bottom: 4px;
+	left: 16px;
+}
+
+div.pro-badge{
+	width: 100%;
+	border-radius: 8px;
+	background-color: #1b75bb;
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	font-size: 16px;
+}
+
+div.pro-badge i{
+	font-size: 20px;
+}
+
+div.pro-badge + .profile-hover-link {
+  	bottom: 30px;
+}
+
+
+.generic-button#chat-with-me a.chat-with-me{
+	position: absolute;
+	width: 82px;
+	color: #fff !important;
+	background-color: #1b75bb !important;
+}
