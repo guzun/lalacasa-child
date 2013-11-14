@@ -149,3 +149,27 @@ div.pro-badge + .profile-hover-link {
 	color: #fff !important;
 	background-color: #1b75bb !important;
 }
+
+.big-btn.button.tiny i{ display: none !important; }
+.big-btn.button.tiny{
+	background-color: #49bc86; 
+	padding: 20px 30px !important;
+	width: 130px;
+	display: block;
+	margin: 0 auto;
+
+}
+
+.big-btn.button.tiny:hover{
+	background-color: #49bc86; 
+}
+
+body.activation .bp-template-notice.updated{
+	display: none;
+}
+
+body.registration  .button.facebook{
+	display: block;
+    margin: 0 auto 35px;
+    width: 180px;
+}
