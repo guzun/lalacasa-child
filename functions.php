@@ -183,4 +183,23 @@ function lala_head_cometchat(){
     <?php 
     }
 
+
+    // trick to cancel free user membership if the user switches from FREE plan to PRO
+    add_action('bp_before_profile_field_content', 'lala_check_membership'); // on profile edit page
+    function lala_check_membership(){
+	    if(is_user_logged_in()){
+	    	$current_user_id = get_current_user_id();
+
+	    	$user->membership_level = pmpro_getMembershipLevelForUser($current_user_id);
+
+			if(bp_get_profile_field_data('field=1047&user_id='.$current_user_id ) == 'Real Estate Pro'){ // if user is a PRO
+	    		var_dump(123);
+	    		if(isset($user->membership_level->ID)  && $user->membership_level->ID ==5){ // 5 is the ID for the FREE member
+	    			pmpro_changeMembershipLevel(0,$current_user_id);
+	    		}
+	    	}
+	    	
+	    }
+	}
+    
 ?>
