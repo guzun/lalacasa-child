@@ -25,7 +25,10 @@
 			<?php if ( 'request-details' == bp_get_current_signup_step() ) : ?>
                 <div class="row">
                     <div class="twelve columns">
-                        <h2 class="article-title text-center"><?php _e( 'Create an Account', 'buddypress' ); ?></h2>
+                    	<?php  
+                    		do_action('fb_popup_register_button');
+                    	?>
+                        <h2 class="article-title text-center"><?php _e( 'Or, create an account using email', 'buddypress' ); ?></h2>
                     </div><!--end twelve-->                                        
                 </div>  
 		
